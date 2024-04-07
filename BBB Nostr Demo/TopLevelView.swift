@@ -13,12 +13,12 @@ struct TopLevelView: View {
         TabView {
             PostingView()
                 .tabItem {
-                    Label("Posting", systemImage: "1.circle")
+                    Label("Posting", systemImage: "square.and.pencil.circle.fill")
                 }
             
             FollowingView()
                 .tabItem {
-                    Label("Following", systemImage: "2.circle")
+                    Label("Following", systemImage: "person.2.circle.fill")
                 }
         }
     }
