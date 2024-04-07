@@ -8,26 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		50F58F262BC1BA19007D4D1C /* BBB_Nostr_DemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F58F252BC1BA19007D4D1C /* BBB_Nostr_DemoApp.swift */; };
-		50F58F282BC1BA19007D4D1C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F58F272BC1BA19007D4D1C /* ContentView.swift */; };
 		50F58F2A2BC1BA1B007D4D1C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50F58F292BC1BA1B007D4D1C /* Assets.xcassets */; };
 		50F58F2D2BC1BA1B007D4D1C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50F58F2C2BC1BA1B007D4D1C /* Preview Assets.xcassets */; };
 		50F58F352BC1BB0F007D4D1C /* NostrSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 50F58F342BC1BB0F007D4D1C /* NostrSDK */; };
 		50F58F372BC1E531007D4D1C /* TopLevelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F58F362BC1E531007D4D1C /* TopLevelView.swift */; };
 		50F58F392BC1E578007D4D1C /* PostingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F58F382BC1E578007D4D1C /* PostingView.swift */; };
 		50F58F3B2BC1E580007D4D1C /* FollowingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F58F3A2BC1E580007D4D1C /* FollowingView.swift */; };
-		50F58F3D2BC1E7A8007D4D1C /* NotePoster.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F58F3C2BC1E7A8007D4D1C /* NotePoster.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		50F58F222BC1BA19007D4D1C /* BBB Nostr Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BBB Nostr Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		50F58F252BC1BA19007D4D1C /* BBB_Nostr_DemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BBB_Nostr_DemoApp.swift; sourceTree = "<group>"; };
-		50F58F272BC1BA19007D4D1C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		50F58F292BC1BA1B007D4D1C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		50F58F2C2BC1BA1B007D4D1C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		50F58F362BC1E531007D4D1C /* TopLevelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopLevelView.swift; sourceTree = "<group>"; };
 		50F58F382BC1E578007D4D1C /* PostingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostingView.swift; sourceTree = "<group>"; };
 		50F58F3A2BC1E580007D4D1C /* FollowingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowingView.swift; sourceTree = "<group>"; };
-		50F58F3C2BC1E7A8007D4D1C /* NotePoster.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotePoster.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,11 +58,9 @@
 			isa = PBXGroup;
 			children = (
 				50F58F252BC1BA19007D4D1C /* BBB_Nostr_DemoApp.swift */,
-				50F58F272BC1BA19007D4D1C /* ContentView.swift */,
 				50F58F362BC1E531007D4D1C /* TopLevelView.swift */,
 				50F58F382BC1E578007D4D1C /* PostingView.swift */,
 				50F58F3A2BC1E580007D4D1C /* FollowingView.swift */,
-				50F58F3C2BC1E7A8007D4D1C /* NotePoster.swift */,
 				50F58F292BC1BA1B007D4D1C /* Assets.xcassets */,
 				50F58F2B2BC1BA1B007D4D1C /* Preview Content */,
 			);
@@ -157,9 +151,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				50F58F282BC1BA19007D4D1C /* ContentView.swift in Sources */,
 				50F58F372BC1E531007D4D1C /* TopLevelView.swift in Sources */,
-				50F58F3D2BC1E7A8007D4D1C /* NotePoster.swift in Sources */,
 				50F58F3B2BC1E580007D4D1C /* FollowingView.swift in Sources */,
 				50F58F262BC1BA19007D4D1C /* BBB_Nostr_DemoApp.swift in Sources */,
 				50F58F392BC1E578007D4D1C /* PostingView.swift in Sources */,
