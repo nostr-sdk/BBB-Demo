@@ -12,22 +12,26 @@ import SwiftUI
 
 struct FollowingView: View {
     @EnvironmentObject var relayPool: RelayPool
+    @EnvironmentObject var users: Users
     
     @State private var events: [NostrEvent] = []
     @State private var subscriptionId: String?
     @State private var eventsCancellable: AnyCancellable?
     
     var body: some View {
-        List(events, id: \.id) { event in
-            if !event.content.isEmpty {
-                Text("\(event.content)")
-            } else {
-                Text("Empty content field for event \(event.id)")
+        VStack {
+            Text("\(users.otherUser.name)'s notes")
+            
+            List(events, id: \.id) { event in
+                if !event.content.isEmpty {
+                    Text("\(event.content)")
+                } else {
+                    Text("Empty content field for event \(event.id)")
+                }
             }
         }
         .onAppear {
-            let bob = PublicKey(npub: "")!  // Update npub to make this work
-            let filter = Filter(authors: [bob.hex],
+            let filter = Filter(authors: [users.otherUser.keypair.publicKey.hex],
                                 kinds: [EventKind.textNote.rawValue])
             subscriptionId = relayPool.subscribe(with: filter)
             

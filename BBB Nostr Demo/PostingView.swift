@@ -11,6 +11,8 @@ import SwiftUI
 
 struct PostingView: View, EventCreating {
     @EnvironmentObject var relayPool: RelayPool
+    @EnvironmentObject var users: Users
+    
     @State private var noteContent = ""
     @FocusState private var isFocused: Bool
     
@@ -34,8 +36,7 @@ struct PostingView: View, EventCreating {
     }
     
     func post() {
-        let keys = Keypair(nsec: "")!   // Update nsec to make this work
-        let note = try! textNote(withContent: noteContent, signedBy: keys)
+        let note = try! textNote(withContent: noteContent, signedBy: users.thisUser.keypair)
         
         relayPool.publishEvent(note)
         
