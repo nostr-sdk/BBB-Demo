@@ -18,9 +18,10 @@ struct PostingView: View, EventCreating {
     
     var body: some View {
         VStack {
-            TextField("", text: $noteContent)
+            TextField("", text: $noteContent, axis: .vertical)
                 .focused($isFocused)
                 .foregroundColor(.white)
+                .font(.system(size: 30))
                 .frame(minHeight: 80)
                 .padding(16)
                 .background(Color.gray)
@@ -29,6 +30,7 @@ struct PostingView: View, EventCreating {
             HStack {
                 Spacer()
                 Button("Post", action: post)
+                    .bold()
             }
             .padding(.top, 12)
         }
